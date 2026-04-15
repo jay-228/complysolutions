@@ -7,14 +7,6 @@ const CustomCursor = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      // Check if it's a touch device or screen width is less than 992px
-      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-      const isSmallScreen = window.matchMedia('(max-width: 991px)').matches;
-      if (isTouch || isSmallScreen) {
-        setIsVisible(false);
-      }
-    };
     // Only initialize if NOT on a mobile device
     const isMobile = window.matchMedia('(max-width: 991px)').matches || ('ontouchstart' in window);
     if (isMobile) return;
