@@ -2,7 +2,11 @@ import React from 'react';
 
 const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
   return (
-    <nav id="mainNav" className="navbar navbar-expand-lg glass-nav py-2">
+    <nav
+      id="mainNav"
+      className="navbar navbar-expand-lg glass-nav py-2"
+      style={{ position: 'relative' }} // IMPORTANT
+    >
       <div className="container-fluid px-2 px-lg-4 d-flex justify-content-between align-items-center">
 
         {/* Logo */}
@@ -33,7 +37,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
           </span>
         </a>
 
-        {/* Toggle */}
+        {/* Toggle Button */}
         <button
           className="navbar-toggler border-0 p-0"
           type="button"
@@ -43,40 +47,58 @@ const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
         </button>
 
         {/* Menu */}
-        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
-
-          <ul className="navbar-nav mx-auto fw-medium text-center mt-3 mt-lg-0">
+        <div
+          className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}
+          id="navbarNav"
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            width: '100%',
+            background: '#fff',
+            borderRadius: '0 0 20px 20px',
+            padding: '20px 15px',
+            zIndex: 999
+          }}
+        >
+          <ul className="navbar-nav text-center fw-medium">
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={() => setIsNavOpen(false)}>Home</a>
+              <a className="nav-link" href="#home" onClick={() => setIsNavOpen(false)}>
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={() => setIsNavOpen(false)}>About</a>
+              <a className="nav-link" href="#about" onClick={() => setIsNavOpen(false)}>
+                About
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={() => setIsNavOpen(false)}>Services</a>
+              <a className="nav-link" href="#services" onClick={() => setIsNavOpen(false)}>
+                Services
+              </a>
             </li>
           </ul>
 
           {/* Mobile Button */}
-          <div className="text-center w-100 d-lg-none mt-3">
+          <div className="mt-3">
             <a
               href="#inquiry"
-              className="btn btn-primary btn-glow rounded-pill px-4 w-100"
+              className="btn btn-primary btn-glow rounded-pill w-100"
               onClick={() => setIsNavOpen(false)}
             >
               Contact Us
             </a>
           </div>
-
-          {/* Desktop Button */}
-          <a
-            href="#inquiry"
-            className="btn btn-primary btn-glow rounded-pill px-4 d-none d-lg-inline-block"
-          >
-            Contact Us
-          </a>
-
         </div>
+
+        {/* Desktop Button */}
+        <a
+          href="#inquiry"
+          className="btn btn-primary btn-glow rounded-pill px-4 d-none d-lg-inline-block"
+        >
+          Contact Us
+        </a>
+
       </div>
     </nav>
   );
