@@ -2,103 +2,81 @@ import React from 'react';
 
 const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
   return (
-    <nav
-      id="mainNav"
-      className="navbar navbar-expand-lg glass-nav py-2"
-      style={{ position: 'relative' }} // IMPORTANT
-    >
-      <div className="container-fluid px-2 px-lg-4 d-flex justify-content-between align-items-center">
-
-        {/* Logo */}
-        <a
-          className="navbar-brand d-flex align-items-center"
-          href="#home"
-          style={{ gap: '10px', maxWidth: '75%' }}
-        >
-          <img
-            src={logo}
-            alt="ComplySolutions Logo"
-            className="brand-logo shadow-sm"
-            style={{
-              objectFit: 'contain',
-              mixBlendMode: 'multiply',
-              height: 'clamp(32px, 5vw, 45px)',
-              width: 'clamp(32px, 5vw, 45px)'
-            }}
+    <nav className="navbar navbar-expand-lg fixed-top" style={{ 
+      backgroundColor: 'rgba(255,255,255,0.95)', 
+      backdropFilter: 'blur(10px)',
+      boxShadow: '0 2px 15px rgba(0,0,0,0.1)'
+    }}>
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
+        <a className="navbar-brand d-flex align-items-center" href="#home" style={{ gap: '8px' }}>
+          <img 
+            src={logo} 
+            alt="Logo" 
+            style={{ 
+              height: 'clamp(28px, 5vw, 40px)', 
+              width: 'auto',
+              objectFit: 'contain'
+            }} 
           />
-
-          <span
-            className="fw-bold text-gradient text-truncate"
-            style={{
-              fontSize: 'clamp(14px, 2.5vw, 22px)'
+          <span 
+            className="fw-bold" 
+            style={{ 
+              fontSize: 'clamp(1rem, 5vw, 1.5rem)',
+              background: 'linear-gradient(135deg, #0d6efd, #0a58ca)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
             }}
           >
             ComplySolutions
           </span>
         </a>
-
-        {/* Toggle Button */}
+        
         <button
-          className="navbar-toggler border-0 p-0"
+          className="navbar-toggler border-0"
           type="button"
           onClick={() => setIsNavOpen(!isNavOpen)}
+          style={{ outline: 'none', padding: '8px' }}
         >
-          <i className={`bi ${isNavOpen ? 'bi-x' : 'bi-list'} fs-3 text-dark`}></i>
+          <i className={`bi ${isNavOpen ? 'bi-x' : 'bi-list'} fs-1`}></i>
         </button>
-
-        {/* Menu */}
-        <div
-          className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}
-          id="navbarNav"
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            width: '100%',
-            background: '#fff',
-            borderRadius: '0 0 20px 20px',
-            padding: '20px 15px',
-            zIndex: 999
-          }}
-        >
-          <ul className="navbar-nav text-center fw-medium">
+        
+        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-center gap-2 gap-lg-4">
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={() => setIsNavOpen(false)}>
+              <a className="nav-link px-2 px-lg-3" href="#home" onClick={() => setIsNavOpen(false)}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={() => setIsNavOpen(false)}>
+              <a className="nav-link px-2 px-lg-3" href="#about" onClick={() => setIsNavOpen(false)}>
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={() => setIsNavOpen(false)}>
+              <a className="nav-link px-2 px-lg-3" href="#services" onClick={() => setIsNavOpen(false)}>
                 Services
               </a>
             </li>
           </ul>
-
-          {/* Mobile Button */}
-          <div className="mt-3">
-            <a
-              href="#inquiry"
-              className="btn btn-primary btn-glow rounded-pill w-100"
+          
+          <div className="d-lg-none text-center mt-3 mt-md-4">
+            <a 
+              href="#inquiry" 
+              className="btn btn-primary rounded-pill px-4 py-2"
               onClick={() => setIsNavOpen(false)}
+              style={{ fontSize: 'clamp(0.875rem, 4vw, 1rem)' }}
             >
               Contact Us
             </a>
           </div>
+          
+          <a 
+            href="#inquiry" 
+            className="btn btn-primary rounded-pill px-4 py-2 d-none d-lg-inline-block"
+          >
+            Contact Us
+          </a>
         </div>
-
-        {/* Desktop Button */}
-        <a
-          href="#inquiry"
-          className="btn btn-primary btn-glow rounded-pill px-4 d-none d-lg-inline-block"
-        >
-          Contact Us
-        </a>
-
       </div>
     </nav>
   );
