@@ -2,70 +2,66 @@ import React from 'react';
 
 const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
   return (
-    <nav className="navbar navbar-expand-lg py-2">
-      <div className="container-fluid px-2 px-lg-4 d-flex align-items-center justify-content-between">
+    <nav id="mainNav" className="navbar navbar-expand-lg glass-nav py-2">
+      <div className="container-fluid px-2 px-lg-4 d-flex justify-content-between align-items-center">
 
-        {/* Logo + Text */}
+        {/* Logo */}
         <a
+          className="navbar-brand d-flex align-items-center"
           href="#home"
-          className="navbar-brand d-flex align-items-center m-0"
-          style={{ gap: '8px', maxWidth: '75%' }}
+          style={{ gap: '10px', maxWidth: '75%' }}
         >
           <img
             src={logo}
-            alt="logo"
+            alt="ComplySolutions Logo"
+            className="brand-logo shadow-sm"
             style={{
-              height: 'clamp(30px, 5vw, 45px)',
-              width: 'clamp(30px, 5vw, 45px)',
-              objectFit: 'contain'
+              objectFit: 'contain',
+              mixBlendMode: 'multiply',
+              height: 'clamp(32px, 5vw, 45px)',
+              width: 'clamp(32px, 5vw, 45px)'
             }}
           />
 
           <span
-            className="fw-bold text-truncate"
+            className="fw-bold text-gradient text-truncate"
             style={{
-              fontSize: 'clamp(14px, 2.5vw, 20px)'
+              fontSize: 'clamp(14px, 2.5vw, 22px)'
             }}
           >
             ComplySolutions
           </span>
         </a>
 
-        {/* Toggle Button */}
+        {/* Toggle */}
         <button
-          className="navbar-toggler border-0"
+          className="navbar-toggler border-0 p-0"
           type="button"
           onClick={() => setIsNavOpen(!isNavOpen)}
         >
-          <i className={`bi ${isNavOpen ? 'bi-x' : 'bi-list'} fs-3`}></i>
+          <i className={`bi ${isNavOpen ? 'bi-x' : 'bi-list'} fs-3 text-dark`}></i>
         </button>
 
         {/* Menu */}
-        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
+        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
 
-          <ul className="navbar-nav mx-auto text-center mt-3 mt-lg-0">
+          <ul className="navbar-nav mx-auto fw-medium text-center mt-3 mt-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={() => setIsNavOpen(false)}>
-                Home
-              </a>
+              <a className="nav-link" href="#home" onClick={() => setIsNavOpen(false)}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={() => setIsNavOpen(false)}>
-                About
-              </a>
+              <a className="nav-link" href="#about" onClick={() => setIsNavOpen(false)}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={() => setIsNavOpen(false)}>
-                Services
-              </a>
+              <a className="nav-link" href="#services" onClick={() => setIsNavOpen(false)}>Services</a>
             </li>
           </ul>
 
           {/* Mobile Button */}
-          <div className="d-lg-none mt-3">
+          <div className="text-center w-100 d-lg-none mt-3">
             <a
               href="#inquiry"
-              className="btn btn-primary w-100 rounded-pill"
+              className="btn btn-primary btn-glow rounded-pill px-4 w-100"
               onClick={() => setIsNavOpen(false)}
             >
               Contact Us
@@ -75,7 +71,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
           {/* Desktop Button */}
           <a
             href="#inquiry"
-            className="btn btn-primary rounded-pill px-4 d-none d-lg-inline-block"
+            className="btn btn-primary btn-glow rounded-pill px-4 d-none d-lg-inline-block"
           >
             Contact Us
           </a>
