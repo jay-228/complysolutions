@@ -63,8 +63,8 @@ const Footer = ({ logo }) => {
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 pt-2 text-center text-md-start">
           <p className="mb-0 small footer-copyright">&copy; {new Date().getFullYear()} ComplySolutions HR Solutions. All Rights Reserved.</p>
           <div className="d-flex gap-4">
-            <a href="#" className="footer-bottom-link">Privacy Policy</a>
-            <a href="#" className="footer-bottom-link">Terms & Conditions</a>
+            <a href="#privacy" className="footer-bottom-link">Privacy Policy</a>
+            <a href="#terms" className="footer-bottom-link">Terms & Conditions</a>
           </div>
         </div>
       </div>
