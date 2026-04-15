@@ -36,7 +36,7 @@ function App() {
       setTimeout(() => {
         document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
       }, 100);
-    }, 800);
+    }, 1000);
 
     return () => {
       clearTimeout(timer);
@@ -55,7 +55,7 @@ function App() {
 
       {/* Pages / Sections */}
       <Loader isLoading={isLoading} logo={complySolutionsLogo} />
-      
+
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} logo={complySolutionsLogo} />
 
       <Hero logo={complySolutionsLogo} />
