@@ -10,7 +10,7 @@ const Footer = ({ logo }) => {
             <div className="brand-block-footer mb-4 justify-content-center justify-content-lg-start">
               <img src={logo} alt="Logo" className="footer-brand-logo" />
               <div>
-                <h3 className="fw-bold text-white mb-0 fs-3">ComplySolutions</h3>
+                <h3 className="fw-bold text-white mb-0 fs-3">ComplyBridge</h3>
                 <span className="text-primary-light small fw-bold tracking-widest text-uppercase">HR Solutions</span>
               </div>
             </div>
@@ -39,13 +39,13 @@ const Footer = ({ logo }) => {
           <div className="col-lg-3">
             <h5 className="footer-heading mb-4 px-3 px-lg-0">Speak to Us</h5>
             <div className="footer-contact-wrapper align-items-center align-items-lg-start px-3 px-lg-0">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=complysolutionshr@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-contact-item text-decoration-none">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=complybridgehr@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-contact-item text-decoration-none">
                 <div className="contact-icon-box">
                   <i className="bi bi-envelope-at-fill"></i>
                 </div>
                 <div className="text-start">
                   <div className="contact-label">Send Email</div>
-                  <div className="contact-value">complysolutionshr@gmail.com</div>
+                  <div className="contact-value">complybridgehr@gmail.com</div>
                 </div>
               </a>
               <div className="footer-contact-item">
@@ -61,7 +61,7 @@ const Footer = ({ logo }) => {
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 pt-2 text-center text-md-start">
-          <p className="mb-0 small footer-copyright">&copy; {new Date().getFullYear()} ComplySolutions HR Solutions. All Rights Reserved.</p>
+          <p className="mb-0 small footer-copyright">&copy; {new Date().getFullYear()} ComplyBridge HR Solutions. All Rights Reserved.</p>
           <div className="d-flex gap-4">
             <a href="#privacy" className="footer-bottom-link">Privacy Policy</a>
             <a href="#terms" className="footer-bottom-link">Terms & Conditions</a>

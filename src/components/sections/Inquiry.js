@@ -18,7 +18,7 @@ const Inquiry = () => {
               Ready to <span className="text-gradient">transform</span> <br /> your workforce?
             </h2>
             <p className="text-muted fs-5 mb-5 pe-lg-5">
-              Experience the perfect blend of technology and human expertise. Discover how ComplySolutions can secure, streamline, and scale your operations with zero legal risk.
+              Experience the perfect blend of technology and human expertise. Discover how ComplyBridge can secure, streamline, and scale your operations with zero legal risk.
             </p>
 
             <div className="premium-contact-card mb-5">
@@ -38,13 +38,13 @@ const Inquiry = () => {
               </div>
             </div>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=complysolutionshr@gmail.com" target="_blank" rel="noopener noreferrer" className="d-inline-flex align-items-center gap-3 p-3 rounded-4 bg-primary bg-opacity-10 border border-primary border-opacity-10 shadow-sm text-decoration-none transition-hover-card">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=complybridgehr@gmail.com" target="_blank" rel="noopener noreferrer" className="d-inline-flex align-items-center gap-3 p-3 rounded-4 bg-primary bg-opacity-10 border border-primary border-opacity-10 shadow-sm text-decoration-none transition-hover-card">
               <div className="bg-primary rounded-circle d-flex align-items-center justify-content-center shadow" style={{ width: 48, height: 48 }}>
                 <i className="bi bi-envelope-heart text-white fs-5"></i>
               </div>
               <div className="pe-3">
                 <div className="small text-muted fw-bold text-uppercase" style={{ fontSize: '0.65rem', letterSpacing: '1px' }}>Quick Support</div>
-                <span className="fs-6 fw-bold text-dark">complysolutionshr@gmail.com</span>
+                <span className="fs-6 fw-bold text-dark">complybridgehr@gmail.com</span>
               </div>
             </a>
           </div>

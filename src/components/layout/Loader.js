@@ -11,7 +11,7 @@ const Loader = ({ isLoading, logo }) => {
           <div className="loader-ring-inner"></div>
         </div>
         <div className="loader-text">
-          {['C', 'O', 'M', 'P', 'L', 'Y', 'S', 'O', 'L', 'U', 'T', 'I', 'O', 'N', 'S'].map((letter, index) => (
+          {['C', 'O', 'M', 'P', 'L', 'Y', 'B', 'R', 'I', 'D', 'G', 'E'].map((letter, index) => (
             <span
               key={index}
               className="loader-letter"

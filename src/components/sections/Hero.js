@@ -17,7 +17,7 @@ const Hero = ({ logo }) => {
               Through <span className="text-gradient">Smart HR & Compliance.</span>
             </h1>
             <p className="lead text-muted mb-5 pe-lg-5 fs-4 mx-auto mx-lg-0" style={{ fontWeight: 400, maxWidth: '600px' }}>
-              At ComplySolutions HR Solutions, we simplify human resource management while ensuring complete legal compliance. From hiring the right talent to managing payroll and statutory requirements, we act as your trusted HR partner.
+              At ComplyBridge HR Solutions, we simplify human resource management while ensuring complete legal compliance. From hiring the right talent to managing payroll and statutory requirements, we act as your trusted HR partner.
             </p>
             <div className="d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-lg-start mb-5">
               <a href="#services" className="btn btn-primary btn-glow btn-lg rounded-pill px-5 py-3 fs-5 fw-bold">

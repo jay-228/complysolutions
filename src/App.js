@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles/App.css';
-import complySolutionsLogo from './assets/images/logo.png';
+import complyBridgeLogo from './assets/images/logo.png';
 
 // Components
 import CustomCursor from './components/common/CustomCursor';
@@ -54,21 +54,21 @@ function App() {
       <div className="bg-orb orb-3"></div>
 
       {/* Pages / Sections */}
-      <Loader isLoading={isLoading} logo={complySolutionsLogo} />
+      <Loader isLoading={isLoading} logo={complyBridgeLogo} />
 
-      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} logo={complySolutionsLogo} />
+      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} logo={complyBridgeLogo} />
 
-      <Hero logo={complySolutionsLogo} />
+      <Hero logo={complyBridgeLogo} />
 
       <About />
 
       <Services />
 
-      <TrustBox logo={complySolutionsLogo} />
+      <TrustBox logo={complyBridgeLogo} />
 
       <Inquiry />
 
-      <Footer logo={complySolutionsLogo} />
+      <Footer logo={complyBridgeLogo} />
       <ScrollToTop />
     </div>
   );

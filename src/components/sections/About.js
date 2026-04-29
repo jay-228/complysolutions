@@ -10,7 +10,7 @@ const About = () => {
               <span className="hero-pill mb-3 border-primary-subtle text-primary shadow-sm" style={{ background: 'rgba(61, 108, 133, 0.08)', display: 'inline-flex' }}>
                 <i className="bi bi-star-fill me-2"></i> Who We Are
               </span>
-              <h2 className="display-4 fw-bold mb-4 text-dark" style={{ lineHeight: '1.2' }}>About <span className="text-gradient">ComplySolutions</span></h2>
+              <h2 className="display-4 fw-bold mb-4 text-dark" style={{ lineHeight: '1.2' }}>About <span className="text-gradient">ComplyBridge</span></h2>
               <p className="lead text-muted fs-5 mb-4">
                 We are a dedicated HR and compliance service provider focused on helping organizations
                 streamline processes and meet regulatory requirements with ease.

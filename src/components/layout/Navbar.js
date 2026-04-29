@@ -5,8 +5,8 @@ const Navbar = ({ isNavOpen, setIsNavOpen, logo }) => {
     <nav id="mainNav" className={`navbar navbar-expand-lg glass-nav ${isNavOpen ? 'nav-open' : ''}`}>
       <div className="container d-flex justify-content-between align-items-center">
         <a className="navbar-brand d-flex align-items-center" href="#home" style={{ gap: 'clamp(6px, 1.5vw, 12px)' }}>
-          <img src={logo} alt="ComplySolutions Logo" className="brand-logo shadow-sm" style={{ objectFit: 'contain', mixBlendMode: 'multiply' }} />
-          <span className="fw-bold text-gradient" style={{ fontSize: 'clamp(1.1rem, 2.8vw, 1.5rem)', letterSpacing: '-0.02em' }}>ComplySolutions</span>
+          <img src={logo} alt="ComplyBridge Logo" className="brand-logo shadow-sm" style={{ objectFit: 'contain', mixBlendMode: 'multiply' }} />
+          <span className="fw-bold text-gradient" style={{ fontSize: 'clamp(1.1rem, 2.8vw, 1.5rem)', letterSpacing: '-0.02em' }}>ComplyBridge</span>
         </a>
         <button
           className="navbar-toggler border-0 p-1"

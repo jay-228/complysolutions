@@ -14,7 +14,7 @@ const TrustBox = ({ logo }) => {
             </div>
             <div className="col-lg-7">
               <h3 className="text-white fw-bold mb-2">Committed to your business success</h3>
-              <p className="text-white-50 mb-0">Join dozens of Indian businesses that trust ComplySolutions for their HR and statutory compliance needs.</p>
+              <p className="text-white-50 mb-0">Join dozens of Indian businesses that trust ComplyBridge for their HR and statutory compliance needs.</p>
             </div>
             <div className="col-lg-3 text-lg-end">
               <a href="#inquiry" className="btn btn-primary btn-glow rounded-pill px-4 py-2 fw-bold">Contact Director</a>
